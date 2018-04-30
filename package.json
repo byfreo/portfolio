@@ -1,0 +1,10 @@
+{
+  "name": "byfreo",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": "Freo Balagtas"
+}
