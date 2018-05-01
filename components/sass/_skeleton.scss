@@ -124,7 +124,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: $nanum;
+  font-family: $montserrat;
   color: #222; }
 
 
@@ -158,7 +158,7 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: $lightblue; }
+  color: $black; }
 a:hover {
   color: #0FA0CE; }
 
