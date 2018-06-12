@@ -1,3 +1,12 @@
-# Portfolio Site 
+# Workflow
 
-This project is a portfolio site to showcase my work,skills and other stuff.
+Requirements:
+ - NodeJS
+ - GulpJS
+ - Git
+
+Installation:
+- Clone or download github
+- Goto current directory of the root folder
+- Run npm install through terminal
+- Run gulp 
