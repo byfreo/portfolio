@@ -7,6 +7,130 @@ body{
 	color: $white;
 	background: $black;
 	a{
-	color: $white;
+		color: $white;
+		text-decoration:none;
 	}
+	a:hover{
+		color:$white;
+	}
+}
+
+*{
+	-webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+	 text-shadow: none;
+	 text-rendering: optimizeLegibility;
+} 
+
+
+ul,li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+p{
+	letter-spacing: 1.4px;
+	line-height: 1.7;
+	color:#ffffff;
+}
+
+.paragraph{
+	font-size: .95rem;
+}
+
+.inline{
+	display: inline-block;
+}
+
+.flex{
+	display: -webkit-box;  
+	display: -moz-box;     
+	display: -ms-flexbox;  
+	display: -webkit-flex; 
+	display: flex;
+}
+.flex.space{
+	align-items:center;       
+	justify-content:space-between;
+}
+.flex.start{
+	align-items:flex-start;   
+	justify-content:center;    
+}
+.flex.center.start{ 
+	align-items:center; 
+	justify-content:flex-start;      
+}
+.flex.center{ 
+	align-items:center; 
+	justify-content:center;      
+}
+.flex.center.end{ 
+	align-items:center; 
+	justify-content:flex-end;      
+}
+.flex.end{ 
+	align-items:flex-end; 
+	justify-content:center;      
+}
+
+.align-left{
+	text-align: left;
+}
+.align-center{
+	text-align: center;
+}
+.align-justify{
+	text-align: justify;
+}
+.align-right{
+	text-align: right;
+}
+
+.trans-fast{
+	transition:all .3s ease;
+}
+
+.trans-mid{
+	transition:all .5s ease;
+}
+
+.trans-slow{
+	transition:all 1s ease;
+}
+
+.pad{
+	padding:0 1em 1em 1em;
+	@media screen and (min-width: $small){
+		padding:0 3em 3em 3em;		
+	}
+}
+
+.black{
+	color: $black;
+}
+.white{
+	color: $white;
+}
+
+.montserrat.light{ 
+	font-weight: 300; 
+} 
+.montserrat.regular{ 
+	font-weight: 400; 
+} 
+.montserrat.medium{ 
+	font-weight: 500;
+ }
+
+.uppercase{
+	text-transform: uppercase;
+}
+.lowercase{
+	text-transform: lowercase;
+}
+
+.p3d{
+	transform-style:preserve-3d
 }

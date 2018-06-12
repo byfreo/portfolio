@@ -1,13 +1,22 @@
 // _variables.scss
 // ===============
 
-@import "https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700";
+@import "https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Playfair+Display:700";
+
+
+// Queries
+//-------------------------------------------
+$small: 600px;
+$medium: 900px;
 
 // Font-Family
+//-------------------------------------------
 
 $montserrat : 'Montserrat', sans-serif;
+$playfair	: 'Playfair Display', serif;
 
 //Colors
+//-------------------------------------------
 
 // preset colors
 
@@ -16,9 +25,9 @@ $white 			: 		#ffffff;
 
 // stinson colors
 
-$sdblue 		: 		#19191a;
-$sdorange 		: 		#1462a8;
-$sdgrey 		: 		#5fc1ef;
+$sdgrey 		: 		#19191a;
+$sdorange 		: 		#f05b24;
+$sdblue 		: 		#5fc1ef;
 
 // candybanners colors
 
@@ -29,6 +38,7 @@ $cbpurple		: 		#8818e2;
 
 // matchmakemovein colors
 
+$mmmblack 	 	: 		#1d1d1d;
 $mmmgrey 		: 		#4d4d4d;
 $mmmlightgrey 	: 		#999999;
 $mmmsalmon 		: 		#f9e9dc;
@@ -41,6 +51,22 @@ $raepurple		: 		#241E26;
 $raegrey 		: 		#A4A4A6;
 $raeblue		: 		#4D5D73;
 $raelight 		: 		#F2F2F2;
+
+// sinclair pharma colors
+
+$sinblue 		: 		#25cbd3;
+$sinroyal		: 		#1462a8;
+$sinyellow		: 		#feea00;
+$sinpink 		: 		#f8b1bc;
+
+$zenteal 		: 		#239aaf;
+$zengrey 		: 		#eef1ec;
+$zengreen 		: 		#0a2328;
+
+$ppblue 		: 		#009cde;
+$pppink 		: 		#de0063;
+$pproyal		: 		#003188;
+
 
 
 

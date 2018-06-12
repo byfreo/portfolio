@@ -1,111 +1,104 @@
-{
-    "$schema": "http://json-schema.org/draft-04/schema",
-    "title": "Sampler",
-    "type": "object",
-    "description": "Texture sampler properties for filtering and wrapping modes.",
-    "allOf": [ { "$ref": "glTFChildOfRootProperty.schema.json" } ],
-    "properties": {
-        "magFilter": {
-            "description": "Magnification filter.",
-            "gltf_detailedDescription": "Magnification filter.  Valid values correspond to WebGL enums: `9728` (NEAREST) and `9729` (LINEAR).",
-            "gltf_webgl": "`texParameterf()` with pname equal to TEXTURE_MAG_FILTER",
-            "anyOf": [
-                {
-                    "enum": [ 9728 ],
-                    "description": "NEAREST"
-                },
-                {
-                    "enum": [ 9729 ],
-                    "description": "LINEAR"
-                },
-                {
-                    "type": "integer"
-                }
-            ]
-        },
-        "minFilter": {
-            "description": "Minification filter.",
-            "gltf_detailedDescription": "Minification filter.  All valid values correspond to WebGL enums.",
-            "gltf_webgl": "`texParameterf()` with pname equal to TEXTURE_MIN_FILTER",
-            "anyOf": [
-                {
-                    "enum": [ 9728 ],
-                    "description": "NEAREST"
-                },
-                {
-                    "enum": [ 9729 ],
-                    "description": "LINEAR"
-                },
-                {
-                    "enum": [ 9984 ],
-                    "description": "NEAREST_MIPMAP_NEAREST"
-                },
-                {
-                    "enum": [ 9985 ],
-                    "description": "LINEAR_MIPMAP_NEAREST"
-                },
-                {
-                    "enum": [ 9986 ],
-                    "description": "NEAREST_MIPMAP_LINEAR"
-                },
-                {
-                    "enum": [ 9987 ],
-                    "description": "LINEAR_MIPMAP_LINEAR"
-                },
-                {
-                    "type": "integer"
-                }
-            ]
-        },
-        "wrapS": {
-            "description": "s wrapping mode.",
-            "default": 10497,
-            "gltf_detailedDescription": "S (U) wrapping mode.  All valid values correspond to WebGL enums.",
-            "gltf_webgl": "`texParameterf()` with pname equal to TEXTURE_WRAP_S",
-            "anyOf": [
-                {
-                    "enum": [ 33071 ],
-                    "description": "CLAMP_TO_EDGE"
-                },
-                {
-                    "enum": [ 33648 ],
-                    "description": "MIRRORED_REPEAT"
-                },
-                {
-                    "enum": [ 10497 ],
-                    "description": "REPEAT"
-                },
-                {
-                    "type": "integer"
-                }
-            ]
-        },
-        "wrapT": {
-            "description": "t wrapping mode.",
-            "default": 10497,
-            "gltf_detailedDescription": "T (V) wrapping mode.  All valid values correspond to WebGL enums.",
-            "gltf_webgl": "`texParameterf()` with pname equal to TEXTURE_WRAP_T",
-            "anyOf": [
-                {
-                    "enum": [ 33071 ],
-                    "description": "CLAMP_TO_EDGE"
-                },
-                {
-                    "enum": [ 33648 ],
-                    "description": "MIRRORED_REPEAT"
-                },
-                {
-                    "enum": [ 10497 ],
-                    "description": "REPEAT"
-                },
-                {
-                    "type": "integer"
-                }
-            ]
-        },
-        "name": { },
-        "extensions": { },
-        "extras": { }
-    },
-    "gltf_webgl": "`texParameterf()`"
-}
+{ "clients" : [
+  { 
+    "name":"Paypal",
+    "shortname":"paypal",
+    "shortdesc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eligendi quae vel quia ab molestiae porro, blanditiis necessitatibus optio pariatur atque ad animi at doloribus qui aspernatur assumenda natus recusandae!",
+    "longdesc":"Barot has just finished his final year at The Royal Academy of Painting and Sculpture, where he excelled in glass etching paintings and portraiture. Hailed as one of the most diverse artists of his generation, Barot is equally as skilled with watercolors as he is with oils, and is just as well-balanced in different subject areas. Barot's collection entitled \"The Un-Collection\" will adorn the walls of Gilbert Hall, depicting his range of skills and sensibilities - all of them, uniquely Barot, yet undeniably different",
+    "role":"Frontend Developer",
+    "type":"Ad Banners",
+    "tech":"HTML5, CSS3, JS, GSAP",
+    "client":"Vertic",
+    "year":"2018",
+    "next":"Match Make Movein",
+    "nextname":"matchmakemovein",
+    "prevname":"stinson",
+    "previous":"Stinson",
+    "image":"paypal-gif.png",
+    "features":"Animation"
+  },
+  { 
+    "name":"Match Make Movein",
+    "shortname":"matchmakemovein",
+    "shortdesc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eligendi quae vel quia ab molestiae porro, blanditiis necessitatibus optio pariatur atque ad animi at doloribus qui aspernatur assumenda natus recusandae!",
+    "longdesc":"Barot has just finished his final year at The Royal Academy of Painting and Sculpture, where he excelled in glass etching paintings and portraiture. Hailed as one of the most diverse artists of his generation, Barot is equally as skilled with watercolors as he is with oils, and is just as well-balanced in different subject areas. Barot's collection entitled \"The Un-Collection\" will adorn the walls of Gilbert Hall, depicting his range of skills and sensibilities - all of them, uniquely Barot, yet undeniably different",
+    "role":"Lead Web Developer",
+    "type":"Custom Theme Development, Ecommerce",
+    "tech":"Wordpress+Woocommerce",
+    "client":"MatchMakeMovein",
+    "year":"2018",
+    "next":"Sinclair",
+    "nextname":"sinclair",
+    "prevname":"paypal",
+    "previous":"Paypal",
+    "image":"matchmakemovein-gif.png",
+    "features":"Ecommerce"
+  },
+  { 
+    "name":"Sinclair",
+    "shortname":"sinclair",
+    "shortdesc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eligendi quae vel quia ab molestiae porro, blanditiis necessitatibus optio pariatur atque ad animi at doloribus qui aspernatur assumenda natus recusandae!",
+    "longdesc":"Barot has just finished his final year at The Royal Academy of Painting and Sculpture, where he excelled in glass etching paintings and portraiture. Hailed as one of the most diverse artists of his generation, Barot is equally as skilled with watercolors as he is with oils, and is just as well-balanced in different subject areas. Barot's collection entitled \"The Un-Collection\" will adorn the walls of Gilbert Hall, depicting his range of skills and sensibilities - all of them, uniquely Barot, yet undeniably different",
+    "role":"Frontend Developer",
+    "type":"Landing Page",
+    "tech":"HTML5, CSS3, JS, jQuery",
+    "client":"Vertic",
+    "year":"2018",
+    "next":"Zendesk",
+    "nextname":"zendesk",
+    "prevname":"matchmakemovein",
+    "previous":"Match Make Movein",
+    "image":"sinclair-feat.png",
+    "features":"Transition"
+  },
+  { 
+    "name":"Zendesk",
+    "shortname":"zendesk",
+    "shortdesc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eligendi quae vel quia ab molestiae porro, blanditiis necessitatibus optio pariatur atque ad animi at doloribus qui aspernatur assumenda natus recusandae!",
+    "longdesc":"Barot has just finished his final year at The Royal Academy of Painting and Sculpture, where he excelled in glass etching paintings and portraiture. Hailed as one of the most diverse artists of his generation, Barot is equally as skilled with watercolors as he is with oils, and is just as well-balanced in different subject areas. Barot's collection entitled \"The Un-Collection\" will adorn the walls of Gilbert Hall, depicting his range of skills and sensibilities - all of them, uniquely Barot, yet undeniably different",
+    "role":"Frontend Developer",
+    "type":"Web Application",
+    "tech":"Angular JS, HTML5, CSS3, GSAP, jQuery",
+    "client":"Vertic",
+    "year":"2016",
+    "next":"CB Marketing",
+    "nextname":"candy",
+    "prevname":"sinclair",
+    "previous":"Sinclair",
+    "image":"zendesk-gif.png",
+    "features":"Web & Mobile App"
+  },
+  { 
+    "name":"CB Marketing",
+    "shortname":"candy",
+    "shortdesc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eligendi quae vel quia ab molestiae porro, blanditiis necessitatibus optio pariatur atque ad animi at doloribus qui aspernatur assumenda natus recusandae!",
+    "longdesc":"Barot has just finished his final year at The Royal Academy of Painting and Sculpture, where he excelled in glass etching paintings and portraiture. Hailed as one of the most diverse artists of his generation, Barot is equally as skilled with watercolors as he is with oils, and is just as well-balanced in different subject areas. Barot's collection entitled \"The Un-Collection\" will adorn the walls of Gilbert Hall, depicting his range of skills and sensibilities - all of them, uniquely Barot, yet undeniably different",
+    "role":"Lead Web Developer",
+    "type":"Web Development",
+    "tech":"Angular JS, HTML5, CSS3, GSAP, jQuery",
+    "client":"Candybanners",
+    "year":"2016",
+    "next":"Stinson",
+    "nextname":"stinson",
+    "prevname":"zendesk",
+    "previous":"Zendesk",
+    "image":"candy-gif.png",
+    "features":"Canvas Animation"
+  },
+  { 
+    "name":"Stinson",
+    "shortname":"stinson",
+    "shortdesc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eligendi quae vel quia ab molestiae porro, blanditiis necessitatibus optio pariatur atque ad animi at doloribus qui aspernatur assumenda natus recusandae!",
+    "longdesc":"Barot has just finished his final year at The Royal Academy of Painting and Sculpture, where he excelled in glass etching paintings and portraiture. Hailed as one of the most diverse artists of his generation, Barot is equally as skilled with watercolors as he is with oils, and is just as well-balanced in different subject areas. Barot's collection entitled \"The Un-Collection\" will adorn the walls of Gilbert Hall, depicting his range of skills and sensibilities - all of them, uniquely Barot, yet undeniably different",
+    "role":"Lead Web Developer",
+    "type":"Custom Web Development & Redesign",
+    "tech":"HTML5, CSS3, JS, jQuery, Wordpress (for blog)",
+    "client":"Stinson",
+    "year":"2015",
+    "next":"Paypal",
+    "nextname":"paypal",
+    "prevname":"candy",
+    "previous":"CB Marketing",
+    "image":"stinson-gif.gif",
+    "features":"Mobile Ready"
+  }
+]}

@@ -1,0 +1,328 @@
+.line-matchmakemovein{
+	@include mmmgradient;
+}
+.line-paypal{
+	@include ppgradient;
+}
+.line-sinclair{
+	@include sinclairgradient;
+}
+.line-stinson{
+	@include stinsongradient;
+}
+.line-candy{
+	@include cbgradient;
+}
+.line-zendesk{
+	@include zendeskgradient;
+}
+
+.short-line-matchmakemovein,
+.line-down-matchmakemovein{
+	background:$mmmgold !important;
+}
+.short-line-paypal,
+.line-down-paypal{
+	background:$ppblue !important;
+}
+.short-line-sinclair,
+.line-down-sinclair{
+	background:$sinpink !important;
+}
+.short-line-stinson,
+.line-down-stinson{
+	background:$sdorange !important;
+}
+.short-line-candy,
+.line-down-candy{
+	background:$cbpink !important;
+}
+.short-line-zendesk,
+.line-down-zendesk{
+	background:$zenteal !important;
+}
+
+.close-paypal{
+	@include ppgradient
+}
+.close-matchmakemovein{
+	@include mmmgradient
+}
+.close-sinclair{
+	@include sinclairgradient
+}
+.close-zendesk{
+	@include zendeskgradient
+}
+.close-candy{
+	@include cbgradient
+}
+.close-stinson{
+	@include stinsongradient
+}
+
+
+.btn-bg-matchmakemovein{
+	@include mmmgradient;
+}
+.btn-bg-paypal{
+	@include ppgradient;
+}
+.btn-bg-sinclair{
+	@include sinclairgradient;
+}
+.btn-bg-stinson{
+	@include stinsongradient;
+}
+.btn-bg-candy{
+	@include cbgradient;
+}
+.btn-bg-zendesk{
+	@include zendeskgradient;
+}
+
+.main-color-paypal{
+	background: url(../images/paypal-showcase.jpg) 0 0 no-repeat;
+	background-size: cover;
+}
+.second-color-paypal{
+	background: $ppblue;
+}
+
+.main-color-matchmakemovein{
+	background: url(../images/matchmakemovein-showcase.jpg) 0 0 no-repeat;
+	background-size: cover;
+}
+.second-color-matchmakemovein{
+	background: $mmmsalmon;
+}
+
+.main-color-sinclair{
+	background: url(../images/sinclair-showcase.jpg) 0 0 no-repeat;
+	background-size: cover;
+}
+
+.second-color-sinclair{
+	background: $sinblue;
+}
+
+.main-color-zendesk{
+	background: url(../images/zendesk-showcase.jpg) 0 0 no-repeat;
+	background-size: cover;
+}
+.second-color-zendesk{
+	background: $zenteal;
+}
+
+.main-color-candy{
+	background: url(../images/candy-showcase.jpg) 0 0 no-repeat;
+	background-size: cover;
+}
+.second-color-candy{
+	background: $cbteal;
+}
+
+.main-color-stinson{
+	background: url(../images/stinson-showcase.jpg) 0 0 no-repeat;
+	background-size: cover;
+}
+.second-color-stinson{
+	background: $sdblue;
+}
+
+.iso-bg-paypal{
+	background:#f4f4f4;
+}
+.iso-bg-matchmakemovein{
+	background: $mmmgrey;
+}
+.iso-bg-sinclair{
+	background: #f4f4f4;
+}
+.iso-bg-zendesk{
+	background: $zengrey;
+}
+.iso-bg-candy{
+	background:#f4f4f4;
+}
+.iso-bg-stinson{
+	background:$sdgrey;
+}
+
+.view-matchmakemovein{
+	&:hover{
+		transition:border .5s linear;
+		border:1px solid $mmmgold !important;
+	}
+}
+.view-candy{
+	&:hover{
+		transition:border .3s linear;
+		border:1px solid $cbteal !important;
+	}
+}
+.view-paypal{
+	&:hover{
+		transition:border .3s linear;
+		border:1px solid $ppblue !important;
+	}
+}
+.view-zendesk{
+	&:hover{
+		transition:border .3s linear;
+		border:1px solid $zengreen !important;
+	}
+}
+.view-stinson{
+	&:hover{
+		transition:border .3s linear;
+		border:1px solid $sdblue !important;
+	}
+}
+.view-sinclair{
+	&:hover{
+		transition:border .3s linear;
+		border:1px solid $sinpink !important;
+	}
+}
+
+.next-paypal{
+	.next-start{
+		stop-color: $ppblue;
+	}
+	.next-end{
+		stop-color: $pproyal;
+	}
+	&:hover{
+		color: $ppblue;
+		span{
+			left:60px !important;
+		}
+	}
+}
+
+.next-sinclair{
+	.next-start{
+		stop-color: $sinblue;
+	}
+	.next-end{
+		stop-color: $sinpink;
+	}
+	&:hover{
+		color: $sinblue;
+		span{
+			left:60px !important;
+		}
+	}
+}
+.next-candy{
+	.next-start{
+		stop-color: $cbpink;
+	}
+	.next-end{
+		stop-color: $cbteal;
+	}
+	&:hover{
+		color: $cbpink;
+		span{
+			left:60px !important;
+		}
+	}
+}
+.next-matchmakemovein{
+	.next-start{
+		stop-color: $mmmgold;
+	}
+	.next-end{
+		stop-color: $mmmblack;
+	}
+	&:hover{
+		color: $mmmgold !important;
+		span{
+			left:60px !important;
+		}
+	}
+}
+.next-zendesk{
+	.next-start{
+		stop-color: $zenteal;
+	}
+	.next-end{
+		stop-color: $zengreen;
+	}
+	&:hover{
+		color: $zenteal;
+		span{
+			left:60px !important;
+		}
+	}
+}
+.next-stinson{
+	.next-start{
+		stop-color: $sdorange;
+	}
+	.next-end{
+		stop-color: $sdblue;
+	}
+	&:hover{
+		color: $sdorange;
+		span{
+			left:60px !important;
+		}
+	}
+}
+
+
+#top-paypal{
+	.top-start{
+		stop-color: $ppblue;
+	}
+	.top-end{
+		stop-color: $pproyal;
+	}
+}
+
+#top-matchmakemovein{
+	.top-start{
+		stop-color: $mmmgold;
+	}
+	.top-end{
+		stop-color: $mmmblack;
+	}
+}
+
+#top-sinclair{
+	.top-start{
+		stop-color: $sinpink;
+	}
+	.top-end{
+		stop-color: $sinblue;
+	}
+}
+
+#top-zendesk{
+	.top-start{
+		stop-color: $zenteal;
+	}
+	.top-end{
+		stop-color: $zengreen;
+	}
+}
+
+#top-candy{
+	.top-start{
+		stop-color: $cbteal;
+	}
+	.top-end{
+		stop-color: $cbpink;
+	}
+}
+
+#top-stinson{
+	.top-start{
+		stop-color: $sdorange;
+	}
+	.top-end{
+		stop-color: $sdblue;
+	}
+}
